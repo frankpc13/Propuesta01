@@ -39,9 +39,12 @@
             // 
             // dataGridClient
             // 
+            this.dataGridClient.AllowUserToAddRows = false;
+            this.dataGridClient.AllowUserToDeleteRows = false;
             this.dataGridClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridClient.Location = new System.Drawing.Point(12, 103);
             this.dataGridClient.Name = "dataGridClient";
+            this.dataGridClient.ReadOnly = true;
             this.dataGridClient.RowHeadersWidth = 51;
             this.dataGridClient.RowTemplate.Height = 24;
             this.dataGridClient.Size = new System.Drawing.Size(776, 280);
@@ -91,7 +94,7 @@
             this.labelTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.labelTotal.Location = new System.Drawing.Point(668, 410);
-            this.labelTotal.MinimumSize = new System.Drawing.Size(120, 0);
+            this.labelTotal.MinimumSize = new System.Drawing.Size(120, 2);
             this.labelTotal.Name = "labelTotal";
             this.labelTotal.Size = new System.Drawing.Size(120, 33);
             this.labelTotal.TabIndex = 5;

@@ -45,6 +45,7 @@ namespace Propuesta1
             bs.DataSource = dataGridClient.DataSource;
             bs.Filter = dataGridClient.Columns[2].HeaderText.ToString() + " LIKE '%" + EditTextName.Text + "%' ";
             dataGridClient.DataSource = bs;
+            labelTotal.Text = dataGridClient.RowCount.ToString();
         }
     }
 }
